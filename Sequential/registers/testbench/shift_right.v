@@ -4,7 +4,6 @@ module tb;
   reg rst;
   reg shift;
   wire [3:0]q;
-integer i;
   right_shift uut(.clk(clk),.rst(rst),.shift(shift), .q(q));
 always #5 clk = ~clk;
 initial begin
