@@ -22,5 +22,5 @@ module mealy_1010(input clk,
       default: next=s0;
     endcase
   end
-  assign y =(state == s3 && x==1);
+  assign y =(state == s3 && x==0);
 endmodule
