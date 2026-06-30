@@ -1,5 +1,7 @@
-
-module dff(input clk,d,output reg y);
+module dff(input clk,rst,d,output reg q);
 	always @ (posedge clk)
-		y <=d;
+		if(rst)
+			q<0;
+	    else
+	        q<=d;
 endmodule
